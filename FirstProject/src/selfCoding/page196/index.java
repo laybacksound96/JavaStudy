@@ -1,6 +1,6 @@
 package selfCoding.page196;
 
-public class main {
+public class index {
 
   public static void main(String[] args) {
     Factory factory = Factory.getFactory();

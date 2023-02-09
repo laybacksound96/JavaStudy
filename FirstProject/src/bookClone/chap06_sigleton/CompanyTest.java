@@ -1,7 +1,5 @@
 package bookClone.chap06_sigleton;
 
-import bookClone.main;
-
 public class CompanyTest {
 
   public static void main(String[] args) {
