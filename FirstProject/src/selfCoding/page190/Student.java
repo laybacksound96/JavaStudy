@@ -6,6 +6,7 @@ public class Student {
   public int cardNumber;
   public String name;
 
+  @SuppressWarnings("unused")
   private Student() {}
 
   public Student(String name) {
