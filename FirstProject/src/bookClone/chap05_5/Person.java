@@ -5,4 +5,7 @@ public class Person {
 	float height;
 	float weight;
 	Subject math;
+	public static void main(String[] args) {
+
+	}
 }
