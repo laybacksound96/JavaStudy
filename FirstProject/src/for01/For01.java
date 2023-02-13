@@ -33,6 +33,7 @@ public class For01 {
             System.out.println(i + "st result : " + calc.calc(operand1, operand2, operator));
         }
         sc.close();
+        System.out.println("aa");
     }
-
+    
 }
