@@ -1,16 +1,17 @@
 package example.exception01;
 
+import java.util.Scanner;
+
 public class _04_NumberFormatException {
     public static void main(String[] args) {
-        String[] strNum = { "23", "17", "3.141592" };
-        int i = 0;
-        try{    
-            for (i = 0; i < strNum.length; i++) {
-                int x = Integer.parseInt(strNum[i]);
-                System.out.println(x);
-            }
-        } catch (NumberFormatException e) {
-            System.out.println(strNum[i]+"에서 문제가 발생함 : 실수를 정수로 변환하지 못하여 오류가 발생하였음" );
-        }
+        System.out.println("1번 문제. 대한민국의 수도는?");
+        
+        Scanner scan = new Scanner(System.in);
+        System.out.println(scan.nextLine());
+
+        System.out.println("\033[H\033[2J");
+        System.out.flush();
+
+        System.out.println("2번 문제. 대한민국의 수도는?");
     }
 }
