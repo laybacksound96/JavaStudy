@@ -36,3 +36,5 @@ public class interfaceExample implements SmartTvInterface,tvInterface{
         this.searchMovie();
     }
 }
+
+
