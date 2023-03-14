@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class Thread1 {
     public static void main(String[] args) {
-        Thread1 thread1 = new Thread1();
-        thread1.test2();
+        new Thread1().test2();
     }
 
     private void test2() {
