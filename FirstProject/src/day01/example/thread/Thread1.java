@@ -10,17 +10,17 @@ public class Thread1 {
 
     private void test2() {
         Scanner scanner = new Scanner(System.in);
-        Thread th1 = new MyThread1(2,1);
-        Thread th2 = new MyThread1(3, 2);
+        Thread calcThread1 = new MultipleCalculator(2,1);
+        Thread calcThread2 = new MultipleCalculator(3, 2);
         
-        th1.start();
-        th2.start();
+        calcThread1.start();
+        calcThread2.start();
         
         while (true) {
             String line = scanner.nextLine();
             if (line == "") {
-                th1.interrupt();
-                th2.interrupt();
+                calcThread1.interrupt();
+                calcThread2.interrupt();
                 System.out.println("실행종료됨");
                 break;
             }
@@ -30,11 +30,11 @@ public class Thread1 {
     }
 
 
-    class MyThread1 extends Thread {
+    class MultipleCalculator extends Thread {
         int multipleArg;
         int secToWait;
 
-        MyThread1(int multipleArg, int secToWait) {
+        MultipleCalculator(int multipleArg, int secToWait) {
             this.multipleArg = multipleArg;
             this.secToWait = secToWait;
         }
